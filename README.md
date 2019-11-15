@@ -1,7 +1,5 @@
 # react-minimal
-React Minimal template
-
-Survival template for the React course
+React-lab6: published on rashair-lab6.netlify.com
 
 ## Getting started
 
