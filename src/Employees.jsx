@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import { withRouter } from "react-router-dom";
+import EmployeeRow from "./EmployeeRow";
 
 class Employees extends React.Component {
   constructor(props) {
@@ -10,6 +11,8 @@ class Employees extends React.Component {
       employees: [],
       error: ""
     };
+
+    this.refreshPage = this.refreshPage.bind(this);
   }
 
   componentDidMount() {
@@ -22,6 +25,10 @@ class Employees extends React.Component {
       })
       .then(data => this.setState({ employees: data, isLoading: false }))
       .catch(error => this.setState({ error, isLoading: false }));
+  }
+
+  refreshPage() {
+    window.location.reload();
   }
 
   render() {
@@ -44,10 +51,7 @@ class Employees extends React.Component {
     return (
       <div className="list-group">
         {employees.map(employee => (
-          <div key={employee._id}>
-            {employee.name} {employee.company} {employee.email} {employee.isActive.toString()}{" "}
-            {employee.age}
-          </div>
+          <EmployeeRow key={employee._id} employeeData={employee} refresh={this.refreshPage} />
         ))}
         <button
           type="button"
