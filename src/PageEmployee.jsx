@@ -3,7 +3,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import newId from "./utils/newid";
 
-class AddEmployee extends React.Component {
+class PageEmployee extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -134,4 +134,4 @@ class AddEmployee extends React.Component {
   }
 }
 
-export default withRouter(AddEmployee);
+export default withRouter(PageEmployee);

@@ -3,7 +3,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import EmployeeRow from "./EmployeeRow";
 
-class Employees extends React.Component {
+class PageEmployeesList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,4 +65,4 @@ class Employees extends React.Component {
   }
 }
 
-export default withRouter(Employees);
+export default withRouter(PageEmployeesList);
