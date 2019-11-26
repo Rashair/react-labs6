@@ -1,5 +1,4 @@
-# react-minimal
-React-lab6: published on rashair-lab6.netlify.com
+# React-lab6
 
 
 ## Production build
