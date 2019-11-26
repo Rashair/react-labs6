@@ -55,7 +55,7 @@ class PageEmployeesList extends React.Component {
         ))}
         <button
           type="button"
-          onClick={() => this.props.history.push("/AddEmployee")}
+          onClick={() => this.props.history.push("/new")}
           className="btn btn-primary mt-2"
         >
           Add employee

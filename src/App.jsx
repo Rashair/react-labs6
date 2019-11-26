@@ -10,7 +10,7 @@ const App = () => (
       <Route exact path="/">
         <PageEmployeesList />
       </Route>
-      <Route path="/AddEmployee">
+      <Route path="/new">
         <PageEmployee />
       </Route>
     </BrowserRouter>
