@@ -66,6 +66,7 @@ class PageEmployee extends React.Component {
               type="text"
               className="form-control"
               placeholder="Name"
+              required="required"
             />
           </div>
           <div className="form-group">
@@ -88,6 +89,7 @@ class PageEmployee extends React.Component {
               type="email"
               className="form-control"
               placeholder="E-mail"
+              required="required"
             />
           </div>
           <div className="form-group">
